@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.layout {
+  width: 100%;
+
+  display: grid;
+  grid: "header header header" auto "leftSide body rightSide" 1fr "footer footer footer" auto / auto 1fr auto;
+
+  gap: 5px;
+  background-color: rgb(29, 221, 242);
+  width: 100%;
+  height: 109vh;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Header part */
+.header {
+  grid-area: header;
+  padding: 5px;
+  display: flex;
+  background-color: rgb(10, 59, 89);
+  margin-top: 5px;
+  width: 99%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.menu ul {
+  list-style: none;
+  color: white;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  margin-top: 10px;
+}
+
+.menu li {
+  margin-top: 10px;
+}
+
+.menu img {
+  border-radius: 50%;
+}
+
+.header h1 {
+  color: rgb(29, 221, 242);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon {
+  background: url(image/logo.png);
+  width: 70px;
+  height: 10vh;
+  background-size: cover;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+/* Header part */
+
+/* Left part */
+.leftSide {
+  grid-area: leftSide;
+  width: 110%;
+  background-color: rgb(10, 59, 89);
+  margin-left: 10px;
+  border-radius: 6px;
+  height: auto;
+}
+
+hr {
+  color: black;
+  align-self: center;
+}
+
+.side_bar {
+  display: inline-block;
+  padding: 30px;
+}
+
+.side_bar ul {
+  list-style: none;
+  display: inline-block;
+  margin-top: 15%;
+  margin-left: 0px;
+}
+
+.side_bar li {
+  align-items: center;
+  display: flex;
+}
+
+.side_bar li:hover {
+  background-color: rgb(17, 75, 111);
+  border-radius: 5px;
+  width: auto;
+  height: auto;
+}
+
+.side_bar a {
+  text-decoration: none;
+  color: white;
+  margin-left: 10%;
+  font-size: medium;
+}
+
+.bell_icon {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.side_bar button {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+/* Left part */
+
+/* body part */
+.body {
+  grid-area: body;
+  width: auto;
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  background-color: rgb(17, 75, 111);
+  border-radius: 10px;
+}
+
+.table {
+  color: rgb(17, 75, 111);
+}
+/* body part */
+
+/* Footer part */
+.footer {
+  grid-area: footer;
+  padding: 10px;
+  display: flex;
+  background-color: rgb(10, 59, 89);
+  margin-top: 5px;
+  width: 99%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  height: 90px;
+  align-items: center;
+}
+
+.par {
+  margin-left: 15px;
+  color: rgb(29, 221, 242);
+}
+/* Footer part */

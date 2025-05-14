@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {{#each music}}
+      <title>{{this.song_name}}</title>
+    {{/each}}
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/play.css" />
+  </head>
+  <body>
+    <section class="layout">
+      <div class="header">
+        <div class="icon"></div>
+        <div class="title">
+          <h1>AGS</h1>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="content">
+          {{#each music}}
+            <div class="img">
+              <img src="/{{this.song_file}}" alt="error" />
+            </div>
+
+            <div class="audio">
+              <audio src="/{{this.song_image}}" controls autoplay></audio>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="par">
+          <h6>CREATED BY: ADRIAN SANTIAGO</h6>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
